@@ -1,14 +1,37 @@
 header {
   font-size: large;
+  padding: 1.5rem;
 }
 
-header > ul {
+header ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  list-style-type: none;
+  border: 1px solid lightgray;
+  background: #ffffff;
+  overflow: auto;
+  margin: 0;
+  padding: 0.5rem;
 }
-header > ul > li {
+
+header ul li {
   width: 100%;
+  /* float: left; */
+}
+
+header li:last-child {
+  margin-left: 30%;
+}
+
+header li > a {
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+
+  padding: 1.4rem 1.6rem;
 }
 
 a {
@@ -16,20 +39,55 @@ a {
   text-decoration: none;
 }
 
-.content {
+header li a.active {
+  color: white;
+  background-color: cadetblue;
+}
+
+header li > a:hover:not(.active) {
+  background-color: bisque;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16rem;
+  box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .dropdown-content > a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 1.2rem 1.6rem;
+}
+
+header .dropdown-content > a:hover {
+  background-color: bisque;
+}
+
+header .dropdown-content > input {
+  width: 10rem;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 1.2rem 3rem;
+}
+
+header .log-in {
+  right: 2.5rem;
+}
+
+/* .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.invisible {
-  display: none;
-}
-
-.col-align {
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdown {
-}
+} */
