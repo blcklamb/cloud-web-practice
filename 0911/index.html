@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lab 2: HTML CSS 연습</title>
+  </head>
+  <body>
+    <header>
+      <!-- 1: 주메뉴 -->
+      <ul>
+        <li><a class="active" href="index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-btn" href="#">MOVIE</a>
+          <!-- 2: 하위 메뉴 -->
+          <div class="dropdown-content invisible col-align">
+            <a href="#">SF</a>
+            <a href="#">COMEDY</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-btn" href="#">SERIES</a>
+          <!-- 2: 하위 메뉴 -->
+          <div class="dropdown-content invisible col-align">
+            <a href="#">DRAMA</a>
+            <a href="#">THRILLER</a>
+          </div>
+        </li>
+        <li><a href="#">COMMUNITY</a></li>
+        <li class="dropdown">
+          <a class="dropdown-btn" href="#">LOGIN</a>
+          <div class="dropdown-content invisible col-align">
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="USER ID"
+            />
+            <input type="password" placeholder="PASSWORD" />
+            <button id="log-in">LOG IN</button>
+            <hr />
+            <button id="sign-in">SIGN IN</button>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <div class="content"></div>
+    <footer>이 곳은 footer입니다.</footer>
+  </body>
+</html>
