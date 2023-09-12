@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_location</title>
+    <!-- practice 01: script 태그의 위치 -->
+    <script>
+      document.write("자바스크립트 head에 위치<br>");
+    </script>
+    <!-- practice 02: dev tools & console 테스트 -->
+    <script>
+      console.log("콘솔창에 출력");
+      document.write("정상적인 코드");
+      // document.wirte("잘못된 코드");
+      console.log("테스트 끝");
+    </script>
+    <!-- practice 03: 주석 -->
+    <script>
+      var x = 5; //x는 5입니다.
+      /* 여러 문장을 하나의 주석으로 묶는다.
+          여러 문장을 하나의 주석으로 묶는다. */
+      // 특정 코드 실행 중단
+      alert(x);
+    </script>
+  </head>
+  <body>
+    <script>
+      document.write("자바스크립트 body에 위치<br>");
+    </script>
+    <script src="javascript_practice.js"></script>
+    <!-- practice 04: variable -->
+    <script>
+      var x = 5;
+      var y = 6;
+      var z = x + y;
+      console.log(z);
+
+      var x = 7;
+      z = x + y;
+      console.log(z);
+    </script>
+  </body>
+</html>
