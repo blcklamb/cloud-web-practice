@@ -1,6 +1,6 @@
 import React from "react";
 
-function Condintional() {
+function Conditional() {
   const isTrue = Math.round(Math.random());
   const name = isTrue ? "체르니" : "김창수";
   const greeting = isTrue
@@ -26,4 +26,4 @@ function Condintional() {
   );
 }
 
-export default Condintional;
+export default Conditional;
