@@ -4,9 +4,10 @@ import ReactDOM from "react-dom/client";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+const pStyle = { color: "white", backgroundColor: "teal" };
 const insertElement = React.createElement(
   "p",
-  {},
+  { style: pStyle },
   "JSX를 이용하지 않고 새로운 element 추가"
 );
 
