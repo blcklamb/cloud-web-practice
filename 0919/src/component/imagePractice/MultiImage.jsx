@@ -1,9 +1,9 @@
 import React from "react";
-import Mountain from "../assets/mountain.jpeg";
-import Dessert from "../assets/dessert.jpeg";
-import Aurora from "../assets/aurora.jpeg";
-import Lake from "../assets/lake.jpeg";
-import Sea from "../assets/sea.jpeg";
+import Mountain from "../../assets/mountain.jpeg";
+import Dessert from "../../assets/dessert.jpeg";
+import Aurora from "../../assets/aurora.jpeg";
+import Lake from "../../assets/lake.jpeg";
+import Sea from "../../assets/sea.jpeg";
 import "./multiimage.css";
 
 const MultiImage = () => {

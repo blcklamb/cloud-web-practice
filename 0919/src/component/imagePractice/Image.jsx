@@ -1,6 +1,6 @@
 import React from "react";
-import Dessert from "../assets/dessert.jpeg";
-import Mountain from "../assets/mountain.jpeg";
+import Dessert from "../../assets/dessert.jpeg";
+import Mountain from "../../assets/mountain.jpeg";
 
 const Image = () => {
   const divStyle = {
