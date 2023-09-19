@@ -9,22 +9,26 @@ function Table() {
   return (
     <div>
       <table>
-        <tr>
-          {Object.keys(member[0]).map((ele, idx) => (
-            <th key={idx}>{ele}</th>
-          ))}
-        </tr>
-        {member.map((ele, idx) => {
-          const { name, age, gender, email } = ele;
-          return (
-            <tr key={idx}>
-              <td>{name}</td>
-              <td>{age}</td>
-              <td>{gender}</td>
-              <td>{email}</td>
-            </tr>
-          );
-        })}
+        <thead>
+          <tr>
+            {Object.keys(member[0]).map((ele, idx) => (
+              <th key={idx}>{ele}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {member.map((ele, idx) => {
+            const { name, age, gender, email } = ele;
+            return (
+              <tr key={idx}>
+                <td>{name}</td>
+                <td>{age}</td>
+                <td>{gender}</td>
+                <td>{email}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );
