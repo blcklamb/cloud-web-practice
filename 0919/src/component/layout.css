@@ -1,0 +1,19 @@
+.header {
+  border: 1px solid teal;
+  background-color: teal;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.main {
+  border: 1px solid teal;
+  background-color: white;
+  color: teal;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  border: 1px solid teal;
+  background-color: teal;
+  color: white;
+}
