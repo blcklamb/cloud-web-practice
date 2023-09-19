@@ -6,11 +6,13 @@ import MultiImage from "./component/imagePractice/MultiImage";
 import ClassComp from "./component/ClassComp";
 import Person from "./component/Person";
 import Layout from "./component/Layout";
+import Event from "./component/Event";
 
 function App() {
   return (
     <div className="App">
-      <Layout />
+      <Event />
+      {/* <Layout />
       <Person />
       <Person />
       <Person />
@@ -18,7 +20,7 @@ function App() {
       <MultiImage />
       <FileUpload />
       <Image />
-      <Table />
+      <Table /> */}
     </div>
   );
 }

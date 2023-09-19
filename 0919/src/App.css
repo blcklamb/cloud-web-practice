@@ -19,3 +19,15 @@ th {
   background-color: teal;
   color: white;
 }
+
+#grand {
+  background-color: aquamarine;
+}
+
+#parent {
+  background-color: #00796b;
+}
+
+#child {
+  background-color: blueviolet;
+}
