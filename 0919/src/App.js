@@ -6,7 +6,7 @@ import MultiImage from "./component/imagePractice/MultiImage";
 import ClassComp from "./component/ClassComp";
 import Person from "./component/Person";
 import Layout from "./component/Layout";
-import Event from "./component/Event";
+import Event from "./component/event/Event";
 
 function App() {
   return (
