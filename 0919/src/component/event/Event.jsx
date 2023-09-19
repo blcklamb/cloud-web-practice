@@ -1,4 +1,7 @@
 import React from "react";
+import Header from "../../layout/Header";
+import ButtonList from "./ButtonList";
+import InputComp from "./InputComp";
 
 const Event = () => {
   // Event Listener
@@ -31,13 +34,25 @@ const Event = () => {
     `);
   };
 
+  const handleEventClick = () => {
+    alert("h1 엘리먼트를 클릭했습니다");
+  };
+
+  const handleEventObjectClick = (e) => {
+    console.log(e.target.name);
+    console.log(e.target.textContent);
+    console.log(e.target.innerText);
+  };
+
   return (
     <>
       <h3>이벤트 리스너 실습</h3>
-      <p onDoubleClick={showResponse}>안녕하세요</p>
-      <button onClick={showMessage}>확인</button>
-      <p id="greeting">안녕하세요.</p>
-      <input id="message" type="button" value="확인" />
+      <div>
+        <p onDoubleClick={showResponse}>안녕하세요</p>
+        <button onClick={showMessage}>확인</button>
+        <p id="greeting">안녕하세요.</p>
+        <input id="message" type="button" value="확인" />
+      </div>
       <h3>이벤트 버블링 실습</h3>
       <div id="grand" onClick={(e) => handleEvent(e)}>
         grandParent
@@ -48,6 +63,13 @@ const Event = () => {
           </button>
         </div>
       </div>
+      <h3>이벤트 alert/object 실습</h3>
+      <div>
+        <Header handleClick={handleEventClick} />
+        <ButtonList handleClick={handleEventObjectClick} />
+      </div>
+      <h3>이벤트 onChange 실습</h3>
+      <InputComp />
     </>
   );
 };
