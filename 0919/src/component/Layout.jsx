@@ -1,17 +1,9 @@
 import React from "react";
+import Header from "../layout/Header";
+import Main from "../layout/Main";
+import Footer from "../layout/Footer";
+
 import "./layout.css";
-
-const Header = () => {
-  return <h1 className="header">Header</h1>;
-};
-
-const Main = () => {
-  return <h1 className="main">Main</h1>;
-};
-
-const Footer = () => {
-  return <h1 className="footer">Footer</h1>;
-};
 
 const Layout = () => {
   return (
