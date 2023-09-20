@@ -1,14 +1,16 @@
+import React from "react";
+
 const Main = ({ children }) => {
   return (
     <div>
       <div className="main">
         Main
-        {children.map((ele) => {
+        {children.map((ele, idx) => {
           return (
-            <>
+            <React.Fragment key={idx}>
               {ele}
               <hr />
-            </>
+            </React.Fragment>
           );
         })}
       </div>
