@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../layout/Header";
 import ButtonList from "./ButtonList";
 import InputComp from "./InputComp";
+import ThrottleComp from "./ThrottleComp";
 
 const Event = () => {
   // Event Listener
@@ -54,11 +55,11 @@ const Event = () => {
         <input id="message" type="button" value="확인" />
       </div>
       <h3>이벤트 버블링 실습</h3>
-      <div id="grand" onClick={(e) => handleEvent(e)}>
+      <div id="grand" onClick={handleEvent}>
         grandParent
-        <div id="parent" onClick={(e) => handleEvent(e)}>
+        <div id="parent" onClick={handleEvent}>
           parent
-          <button id="child" onClick={(e) => handleEvent(e)}>
+          <button id="child" onClick={handleEvent}>
             child
           </button>
         </div>
@@ -69,7 +70,10 @@ const Event = () => {
         <ButtonList handleClick={handleEventObjectClick} />
       </div>
       <h3>이벤트 onChange 실습</h3>
-      <InputComp />
+      <div>
+        <InputComp />
+        <ThrottleComp />
+      </div>
     </>
   );
 };

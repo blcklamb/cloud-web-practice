@@ -1,14 +1,20 @@
-import React from "react";
+import _debounce from "debounce";
 
 const InputComp = () => {
   return (
     <div>
-      <label>고객명 : </label>
+      <label htmlFor="clientName">고객명 : </label>
       <input
         type="text"
-        name="clientName"
+        id="clientName"
         placeholder="고객 이름을 입력하세요."
         onChange={(e) => console.log(e)}
+      />
+      <input
+        type="text"
+        id="clientName"
+        placeholder="(debounce) 고객 이름을 입력하세요."
+        onChange={_debounce((e) => console.log(e), 2000)}
       />
     </div>
   );
