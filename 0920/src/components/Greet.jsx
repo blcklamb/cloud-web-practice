@@ -1,6 +1,4 @@
-import { Message } from "./TextBox/Message";
-import { Headline } from "./TextBox/Headline";
-import { Description } from "./TextBox/Description";
+import { Message, Description, Headline } from "./TextBox";
 
 const Greeting = ({ title, description }) => {
   return (
