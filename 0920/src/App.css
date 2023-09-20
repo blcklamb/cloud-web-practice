@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.movieImage {
+  width: 10%;
+  height: 10%;
+}
+
+.header {
+  border: 0.1rem solid teal;
+  background-color: teal;
+  color: white;
+  margin-bottom: 10;
+}
+
+.main {
+  border: 0.2rem solid green;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+}
