@@ -23,7 +23,6 @@
   margin-bottom: 1rem;
 
   display: flex;
-  flex-direction: row;
 }
 
 .propsImage {
@@ -36,7 +35,6 @@
   padding: 1rem;
 
   display: flex;
-  flex-direction: row;
 }
 
 .movieText {
@@ -44,5 +42,37 @@
 }
 
 .movieContainer {
+  padding: 1rem;
+}
+
+.countBtn {
+  margin: 0.5rem;
+}
+
+.resetBtn {
+  margin: 0.5rem;
+}
+
+.countNum {
+  font-size: 4rem;
+}
+
+.inputColContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input {
+  width: 10rem;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
   padding: 1rem;
 }
