@@ -1,28 +1,34 @@
 import { useState } from "react";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const handleEmail = (e) => setEmail(e.target.value);
-  const handlePassword = (e) => setPassword(e.target.value);
+  const [form, setForm] = useState({ email: "", password: "" });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
   const handleSubmit = (e) => {
-    // e.preventDefault();
-    alert(`email: ${email} password: ${password}`);
+    e.preventDefault();
+    alert(`email: ${form.email} password: ${form.password}`);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="container">
       <div>
         <label htmlFor="email">이메일</label>
-        <input id="email" type="text" value={email} onChange={handleEmail} />
+        <input
+          id="email"
+          type="text"
+          value={form.email}
+          onChange={handleChange}
+        />
       </div>
       <div>
         <label htmlFor="password">패스워드</label>
         <input
           id="password"
           type="password"
-          value={password}
-          onChange={handlePassword}
+          value={form.password}
+          onChange={handleChange}
         />
       </div>
       <button type="submit">전송</button>
