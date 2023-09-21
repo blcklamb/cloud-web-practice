@@ -2,8 +2,9 @@ import { useState } from "react";
 import allCountry from "./country.json";
 import CountryBoard from "./CountryBoard";
 
-const getImageURL = (code) => `https://flagsapi.com/${code}/shiny/64.png`;
 const CountryList = () => {
+  const getImageURL = (code) => `https://flagsapi.com/${code}/shiny/64.png`;
+
   const pickRandomCountry = (n) => {
     const pickedCountry = [];
     const keys = Object.keys(allCountry);
@@ -43,9 +44,8 @@ const CountryList = () => {
     setCountry(newState);
   };
 
-  const updateAll = () => {
-    setCountry(pickRandomCountry(5));
-  };
+  const updateAll = () => setCountry(pickRandomCountry(5));
+
   return (
     <div className="container">
       <select name="country" id="country" onChange={onChangeSelect}>
@@ -57,10 +57,13 @@ const CountryList = () => {
           );
         })}
       </select>
-      <button className="basic-btn" onClick={updateAll}>
-        전부 업데이트
-      </button>
+
       <CountryBoard data={country} onUpdate={updateState} />
+      <div>
+        <button className="basic-btn update-btn" onClick={updateAll}>
+          전부 업데이트
+        </button>
+      </div>
     </div>
   );
 };

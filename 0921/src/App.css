@@ -39,6 +39,15 @@
   background: rgb(255, 80, 0);
 }
 
+.update-btn {
+  color: rgb(0, 0, 0);
+  background: #f4e869;
+}
+
+.nation-update-btn {
+  width: 7rem;
+}
+
 .todo-content {
   margin-right: 0.5rem;
 }
@@ -85,4 +94,20 @@
     border-color: #3b49df;
     box-shadow: 1px 1px 0 #3b49df;
   }
+}
+
+.flexRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.country-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
 }

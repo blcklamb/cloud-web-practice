@@ -1,23 +1,17 @@
-import { React, Fragment } from "react";
+import { Fragment } from "react";
+import CountryItem from "./CountryItem";
 
 const CountryBoard = ({ data, onUpdate }) => {
   return (
-    <>
+    <div className="flexRow margin-bottom">
       {data.map((ele) => {
-        const { id, name, image } = ele;
         return (
-          <Fragment key={id}>
-            <div>
-              <p>{name}</p>
-              <img src={image} alt={name} />
-            </div>
-            <button className="basic-btn" onClick={() => onUpdate(id)}>
-              업데이트
-            </button>
+          <Fragment key={ele.id}>
+            <CountryItem {...ele} onUpdate={onUpdate} />
           </Fragment>
         );
       })}
-    </>
+    </div>
   );
 };
 
