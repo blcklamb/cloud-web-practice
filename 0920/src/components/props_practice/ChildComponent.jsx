@@ -1,6 +1,6 @@
 import React from "react";
 import Main from "./Main";
-import { PassingComponent } from "./PassingComponent";
+import PassingComponent from "./PassingComponent";
 
 const ChildComponent = () => {
   return (

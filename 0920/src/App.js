@@ -6,11 +6,13 @@ import Movies from "./components/Movies";
 import ChildComponent from "./components/props_practice/ChildComponent";
 import SpreadCity from "./components/SpreadCity";
 import Main from "./components/state_practice/Main";
+import Checkbox from "./components/state_practice/Checkbox";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Checkbox />
       <Main />
       <SpreadCity />
       <ChildComponent />

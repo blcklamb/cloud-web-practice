@@ -3,6 +3,7 @@ import { useState } from "react";
 const Main = () => {
   const [count, setCount] = useState(0);
   const onIncrease = (e) => setCount((prev) => prev + 1);
+  // TODO: compare
   //   const onIncrease = (e) => {
   //     console.log(e.target.value, count);
   //     setCount(count + 1);
@@ -21,25 +22,8 @@ const Main = () => {
 
   const onReset = () => setInput({ userId: "", userPW: "" });
 
-  const [checked, setChecked] = useState(false);
-  const handleChange = () => {
-    setChecked((prev) => !prev);
-  };
   return (
     <div className="container">
-      <h1>Checkbox</h1>
-      <div className="main flexCol">
-        <label>
-          <input
-            type="checkbox"
-            value="서울"
-            checked={checked}
-            onChange={handleChange}
-          />
-          서울
-        </label>
-        <p>"서울" 선택 여부 : {checked.toString()}</p>
-      </div>
       <h1>카운트</h1>
       <div className="main flexCol">
         <p className="countNum">{count}</p>

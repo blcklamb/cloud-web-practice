@@ -4,10 +4,8 @@ const Checkbox = ({ label, isChecked, onChange }) => {
       <input
         type="checkbox"
         value={label}
-        checked={({ target: { value } }) => isChecked(value)}
-        onChange={({ target: { checked, value } }) => {
-          onChange({ checked: checked, value });
-        }}
+        checked={isChecked}
+        onChange={onChange}
       />
       {label}
     </label>
