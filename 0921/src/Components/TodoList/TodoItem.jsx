@@ -1,10 +1,12 @@
 import { useState } from "react";
+import EditItem from "./EditItem";
 
 const TodoItem = ({ content, onDelete, onEdit }) => {
   const [isEditting, setIsEditting] = useState(false);
   const [editInput, setEditInput] = useState(content);
 
   const onChangeEditInput = (e) => setEditInput(e.target.value);
+
   const onClickEdit = () => {
     if (!editInput) {
       alert("수정된 할 일을 1자 이상 입력해주세요.");
@@ -32,19 +34,12 @@ const TodoItem = ({ content, onDelete, onEdit }) => {
           </button>
         </>
       ) : (
-        <>
-          <input
-            className="edit-input"
-            value={editInput}
-            onChange={onChangeEditInput}
-          />
-          <button className="basic-btn" onClick={onClickEdit}>
-            수정 완료
-          </button>
-          <button className="basic-btn" onClick={() => setIsEditting(false)}>
-            수정 취소
-          </button>
-        </>
+        <EditItem
+          inputValue={editInput}
+          onChangeEditInput={onChangeEditInput}
+          onClickEdit={onClickEdit}
+          onClickCancel={() => setIsEditting(false)}
+        />
       )}
     </li>
   );
