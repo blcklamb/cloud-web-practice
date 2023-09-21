@@ -4,7 +4,7 @@ import TodoItem from "./TodoItem";
 const TodoBoard = ({ data, onDelete, onEdit }) => {
   return (
     <ul>
-      {!!data && <p>아직 등록된 할 일이 없습니다.</p>}
+      {data.length === 0 && <p>아직 등록된 할 일이 없습니다.</p>}
       {data.map((ele, idx) => {
         return (
           <Fragment key={idx}>

@@ -6,8 +6,12 @@ const TodoItem = ({ content, onDelete, onEdit }) => {
 
   const onChangeEditInput = (e) => setEditInput(e.target.value);
   const onClickEdit = () => {
-    onEdit(editInput);
-    setIsEditting(false);
+    if (!editInput) {
+      alert("수정된 할 일을 1자 이상 입력해주세요.");
+    } else {
+      onEdit(editInput);
+      setIsEditting(false);
+    }
   };
 
   const onOpenEditInput = () => {

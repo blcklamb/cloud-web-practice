@@ -6,7 +6,11 @@ const TodoList = () => {
   const [todo, setTodo] = useState([]);
 
   const onSubmitTodo = (newTodo) => {
-    setTodo((prev) => [newTodo, ...prev]);
+    if (!newTodo) {
+      alert("할 일을 1자 이상 입력해주세요");
+    } else {
+      setTodo((prev) => [newTodo, ...prev]);
+    }
   };
 
   const onDeleteTodo = (delIdx) => () => {
