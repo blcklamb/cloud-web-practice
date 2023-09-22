@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import TodoItem from "./TodoItem";
 
 const TodoBoard = ({ data, onDelete, onEdit }) => {
@@ -8,13 +7,12 @@ const TodoBoard = ({ data, onDelete, onEdit }) => {
       {data.map((ele) => {
         const { id, todo } = ele;
         return (
-          <Fragment key={id}>
-            <TodoItem
-              content={todo}
-              onDelete={onDelete(id)}
-              onEdit={onEdit(id)}
-            />
-          </Fragment>
+          <TodoItem
+            key={id}
+            content={todo}
+            onDelete={onDelete(id)}
+            onEdit={onEdit(id)}
+          />
         );
       })}
     </ul>
