@@ -4,9 +4,7 @@ import { CheckboxContext } from "./CheckboxContext";
 const Checkbox = ({ children, value, checked, onChange }) => {
   const context = useContext(CheckboxContext);
 
-  console.log("checkbox", value);
-
-  if (context) {
+  if (!context) {
     return (
       <label>
         <input
