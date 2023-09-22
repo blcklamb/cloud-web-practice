@@ -2,3 +2,13 @@
   width: 95%;
   margin: 0 auto;
 }
+
+.container {
+  border: 0.1rem solid #94a684;
+  border-radius: 0.5rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  padding: 0.5rem;
+}
