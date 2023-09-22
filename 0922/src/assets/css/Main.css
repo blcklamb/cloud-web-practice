@@ -1,0 +1,74 @@
+.main {
+  background-color: #ffffff;
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.main h2 {
+  font-size: 3rem;
+  color: #94a684;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.attractions {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.attractions div {
+  flex: 1 1 20rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #aec3ae;
+  padding: 1rem 1rem 0 1rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column;
+}
+
+.item img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 0.3rem;
+}
+
+.attractions h3 {
+  color: #94a684;
+  font-weight: bolder;
+  margin: 0.5rem auto;
+}
+
+.attractions .more {
+  margin-top: auto;
+}
+
+.button {
+  background-color: #94a684;
+  display: inline-block;
+  height: 3.8rem;
+  padding: 0 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #bbbbbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #aec3ae;
+}
