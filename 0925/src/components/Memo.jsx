@@ -6,7 +6,7 @@ const getAverage = (numbers) => {
   return numbers.reduce((a, b) => a + b) / numbers.length;
 };
 
-const Average = () => {
+const Memo = () => {
   const [numberList, setNumberList] = useState([]);
   //! input의 data는 문자열
   const [numberValue, setNumberValue] = useState("");
@@ -22,7 +22,7 @@ const Average = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <input value={numberValue} onChange={onChange} />
       <button onClick={onInsert}>값 등록</button>
       <hr />
@@ -36,4 +36,4 @@ const Average = () => {
   );
 };
 
-export default Average;
+export default Memo;
