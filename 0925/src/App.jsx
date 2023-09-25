@@ -1,10 +1,16 @@
 import "./App.css";
-import Average from "./components/Average";
+import Callback from "./components/Callback";
+import Memo from "./components/Memo";
+import Counter from "./components/useReducer/Counter";
+import Input from "./components/useReducer/Input";
 
 function App() {
   return (
     <>
-      <Average />
+      <Memo />
+      <Callback />
+      <Counter />
+      <Input />
     </>
   );
 }
