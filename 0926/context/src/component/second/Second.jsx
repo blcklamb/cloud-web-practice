@@ -10,13 +10,19 @@ const Second = () => {
     setIsLarge(e.target.checked);
   };
   return (
-    <ImageSizeContext.Provider value={imageSize}>
-      <label>
-        <input type="checkbox" checked={isLarge} onChange={onToggleCheckbox} />
-      </label>
-      <hr />
-      <ImageList />
-    </ImageSizeContext.Provider>
+    <div className="container">
+      <ImageSizeContext.Provider value={imageSize}>
+        <label>
+          <input
+            type="checkbox"
+            checked={isLarge}
+            onChange={onToggleCheckbox}
+          />
+        </label>
+        <hr />
+        <ImageList />
+      </ImageSizeContext.Provider>
+    </div>
   );
 };
 
