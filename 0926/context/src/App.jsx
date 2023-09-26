@@ -1,10 +1,12 @@
 import "./App.css";
-import Main from "./component/Main";
+import First from "./component/first/First";
+import Second from "./component/second/Second";
 
 function App() {
   return (
     <>
-      <Main />
+      <Second />
+      <First />
     </>
   );
 }
