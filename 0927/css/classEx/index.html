@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0927 실습</title>
+    <style>
+      div {
+        padding: 1rem;
+      }
+      .world .capital {
+        color: #26577c;
+      }
+      .world > .country {
+        color: #e55604;
+      }
+      /* .country:nth-of-type(1) + div {
+        color: plum;
+      } */
+      .country:nth-of-type(2) ~ div {
+        color: plum;
+      }
+
+      table {
+        border-collapse: collapse;
+        color: #ffffff;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ffffff;
+        padding: 5rem;
+      }
+      th {
+        font-size: 1.2rem;
+      }
+      tr:nth-last-child(1) {
+        font-size: 1.2rem;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="world">
+      World
+      <div class="country">
+        England
+        <div class="capital">London</div>
+      </div>
+      <div class="country">
+        South Korea
+        <div class="capital">Seoul</div>
+      </div>
+      <div class="country">
+        Germany
+        <div class="capital">Berlin</div>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <th>item</th>
+        <th>quantity</th>
+        <th>price</th>
+      </tr>
+      <tr>
+        <td>Laptop</td>
+        <td>1</td>
+        <td>450</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>1</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>3</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>Car</td>
+        <td>1</td>
+        <td>8000</td>
+      </tr>
+      <tr>
+        <td>Book</td>
+        <td>3</td>
+        <td>65</td>
+      </tr>
+    </table>
+  </body>
+</html>
