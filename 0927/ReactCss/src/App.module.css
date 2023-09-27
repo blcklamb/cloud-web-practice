@@ -1,0 +1,16 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 230, 29, 1) 0%,
+    rgba(121, 9, 42, 1) 54%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+
+.heading {
+  color: violet;
+  padding: 1rem;
+}

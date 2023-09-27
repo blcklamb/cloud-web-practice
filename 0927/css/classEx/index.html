@@ -6,98 +6,41 @@
     <title>0927 실습</title>
     <style>
       .container {
-        margin: 0 auto;
         background-color: lightblue;
-        width: 90%;
-        display: flex;
-        /* flex-wrap: nowrap; */
-        /* flex-wrap: wrap; */
-        flex-wrap: wrap-reverse;
-      }
-      .container .item {
-        width: 90%;
+        height: 400px;
+        padding: 10px;
         margin: 0 auto;
+        list-style: none;
+
+        display: flex;
+        justify-content: space-around;
+      }
+      .item {
+        background-color: tomato;
         padding: 5px;
-        box-sizing: border-box;
+        margin: 5px;
+        width: 180px;
+        height: 50px;
+
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
       }
-      .container .item img {
-        width: 90%;
+      .item3 {
+        order: 20;
       }
-      .container .item h3 {
-        margin-bottom: 0;
-        font-weight: 700;
-        color: teal;
-      }
-      .container .item p {
-        margin-top: 0;
+      .item4 {
+        order: -5;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="item">
-        <img
-          src="https://reactcyst.blob.core.windows.net/reactimgs/austria.png"
-          alt="austria"
-          class="item"
-        />
-        <h3>오스트리아</h3>
-        <p class="detail">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
-          modi maxime assumenda? Numquam voluptates iusto eos accusantium
-          eligendi possimus earum, delectus quaerat velit! Magni odio earum
-          praesentium placeat reiciendis!
-        </p>
-      </div>
-      <div class="item">
-        <img
-          src="https://reactcyst.blob.core.windows.net/reactimgs/swiss.png"
-          alt="swiss"
-          class="item"
-        />
-        <h3>스위스</h3>
-        <p class="detail">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-          reiciendis maiores accusamus ratione quia temporibus, unde culpa vel,
-          nobis aperiam, quod animi? Nam laborum, autem optio facilis tenetur
-          iure minima. Pariatur nobis, veritatis id adipisci facilis quam sunt
-          ad soluta exercitationem ea assumenda nisi! Eaque minus voluptate
-          quos. Similique consequatur cupiditate porro ut, mollitia debitis
-          numquam sunt delectus expedita dolor. Accusamus nobis error quas, cum
-          sequi harum atque! Recusandae quod fugiat quas eligendi adipisci quam,
-          iusto similique dolore, ullam in illum explicabo! Quod reprehenderit
-          optio quae numquam repudiandae, doloribus ab.velit! Magni odio earum
-          praesentium placeat reiciendis!
-        </p>
-      </div>
-      <div class="item">
-        <img
-          src="https://reactcyst.blob.core.windows.net/reactimgs/hungary.png"
-          alt="hungary"
-          class="item"
-        />
-        <h3>헝가리</h3>
-        <p class="detail">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
-          modi maxime assumenda? Numquam voluptates iusto eos accusantium
-          eligendi possimus earum, delectus quaerat velit! Magni odio earum
-          praesentium placeat reiciendis!
-        </p>
-      </div>
-      <div class="item">
-        <img
-          src="https://reactcyst.blob.core.windows.net/reactimgs/denmark.png"
-          alt="denmark"
-          class="item"
-        />
-        <h3>덴마크</h3>
-        <p class="detail">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
-          modi maxime assumenda? Numquam voluptates iusto eos accusantium
-          eligendi possimus earum, delectus quaerat velit! Magni odio earum
-          praesentium placeat reiciendis!
-        </p>
-      </div>
-    </div>
+    <ul class="container">
+      <li class="item item1">item 1</li>
+      <li class="item item2">item 2</li>
+      <li class="item item3">item 3</li>
+      <li class="item item4">item 4</li>
+    </ul>
   </body>
 </html>
