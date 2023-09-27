@@ -5,47 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>0927 실습</title>
     <style>
-      .container1 {
+      .container {
         display: flex;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        padding: 10px;
+        background-color: #f1f8e9;
+        border: 1px solid #8bc34a;
+        height: 400px;
+      }
+      .item1,
+      .item2 {
+        color: white;
+        margin: 10px;
+        padding: 10px;
+      }
+      .item1 {
         background-color: teal;
-        margin-bottom: 10px;
       }
-      .container2 {
-        display: inline-flex;
-        background-color: yellowgreen;
-      }
-      .container3 {
-        display: none;
+      .item2 {
         background-color: blue;
       }
     </style>
   </head>
   <body>
-    <div class="container1">
-      <h2>K-pop 가수</h2>
-      <ul>
-        <li>BTS</li>
-        <li>블랙핑크</li>
-      </ul>
+    <div class="container">
+      <div class="item1">
+        <h4>K-pop</h4>
+        <ul>
+          <li>BTS</li>
+          <li>블랙핑크</li>
+          <li>싸이</li>
+        </ul>
+      </div>
+      <div class="item2">
+        <h4>K-food</h4>
+        <ul>
+          <li>불고기</li>
+          <li>비빔밥</li>
+        </ul>
+      </div>
     </div>
-    <div class="container2">
-      <h2>K-pop 가수</h2>
-      <ul>
-        <li>BTS</li>
-        <li>블랙핑크</li>
-      </ul>
-    </div>
-    <div class="container3">
-      <h2>K-pop 가수</h2>
-      <ul>
-        <li>BTS</li>
-        <li>블랙핑크</li>
-      </ul>
-    </div>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-      perspiciatis molestiae minus impedit numquam sit illo et facilis incidunt,
-      placeat excepturi repudiandae, magni eaque earum est, saepe natus nam ad?
-    </p>
   </body>
 </html>
