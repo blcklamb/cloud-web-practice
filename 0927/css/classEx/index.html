@@ -6,34 +6,98 @@
     <title>0927 실습</title>
     <style>
       .container {
-        padding: 10px;
-        margin: 0;
-        list-style: none;
-        height: 400px;
-        background-color: lightgray;
+        margin: 0 auto;
+        background-color: lightblue;
+        width: 90%;
         display: flex;
-        /* flex-direction: column; */
-        justify-content: flex-start;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        flex-wrap: wrap-reverse;
       }
-      .flex-item {
-        background-color: tomato;
+      .container .item {
+        width: 90%;
+        margin: 0 auto;
         padding: 5px;
-        margin: 5px;
-        width: 180px;
-        height: 50px;
-        color: white;
-        font-weight: bold;
-        font-size: 2em;
-        text-align: center;
+        box-sizing: border-box;
+      }
+      .container .item img {
+        width: 90%;
+      }
+      .container .item h3 {
+        margin-bottom: 0;
+        font-weight: 700;
+        color: teal;
+      }
+      .container .item p {
+        margin-top: 0;
       }
     </style>
   </head>
   <body>
-    <ul class="container">
-      <li class="flex-item">서울</li>
-      <li class="flex-item">부산</li>
-      <li class="flex-item">인천</li>
-      <li class="flex-item">제주도</li>
-    </ul>
+    <div class="container">
+      <div class="item">
+        <img
+          src="https://reactcyst.blob.core.windows.net/reactimgs/austria.png"
+          alt="austria"
+          class="item"
+        />
+        <h3>오스트리아</h3>
+        <p class="detail">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
+          modi maxime assumenda? Numquam voluptates iusto eos accusantium
+          eligendi possimus earum, delectus quaerat velit! Magni odio earum
+          praesentium placeat reiciendis!
+        </p>
+      </div>
+      <div class="item">
+        <img
+          src="https://reactcyst.blob.core.windows.net/reactimgs/swiss.png"
+          alt="swiss"
+          class="item"
+        />
+        <h3>스위스</h3>
+        <p class="detail">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+          reiciendis maiores accusamus ratione quia temporibus, unde culpa vel,
+          nobis aperiam, quod animi? Nam laborum, autem optio facilis tenetur
+          iure minima. Pariatur nobis, veritatis id adipisci facilis quam sunt
+          ad soluta exercitationem ea assumenda nisi! Eaque minus voluptate
+          quos. Similique consequatur cupiditate porro ut, mollitia debitis
+          numquam sunt delectus expedita dolor. Accusamus nobis error quas, cum
+          sequi harum atque! Recusandae quod fugiat quas eligendi adipisci quam,
+          iusto similique dolore, ullam in illum explicabo! Quod reprehenderit
+          optio quae numquam repudiandae, doloribus ab.velit! Magni odio earum
+          praesentium placeat reiciendis!
+        </p>
+      </div>
+      <div class="item">
+        <img
+          src="https://reactcyst.blob.core.windows.net/reactimgs/hungary.png"
+          alt="hungary"
+          class="item"
+        />
+        <h3>헝가리</h3>
+        <p class="detail">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
+          modi maxime assumenda? Numquam voluptates iusto eos accusantium
+          eligendi possimus earum, delectus quaerat velit! Magni odio earum
+          praesentium placeat reiciendis!
+        </p>
+      </div>
+      <div class="item">
+        <img
+          src="https://reactcyst.blob.core.windows.net/reactimgs/denmark.png"
+          alt="denmark"
+          class="item"
+        />
+        <h3>덴마크</h3>
+        <p class="detail">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
+          modi maxime assumenda? Numquam voluptates iusto eos accusantium
+          eligendi possimus earum, delectus quaerat velit! Magni odio earum
+          praesentium placeat reiciendis!
+        </p>
+      </div>
+    </div>
   </body>
 </html>
