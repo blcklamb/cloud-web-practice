@@ -5,7 +5,7 @@ const Button = styled.div`
   cursor: pointer;
   text-decoration: none;
   color: white;
-  background-color: teal;
+  background-color: ${(props) => (props.bg === "orange" ? "orange" : "indigo")};
   margin: 0 auto;
   padding: 5px;
   font-size: 16px;
