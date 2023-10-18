@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- sync, async -->
+    <!-- <script>
+      //   function goToSeoul() {
+      //     document.write("서울 여행");
+      //   }
+      function goToSeoul() {
+        for (let i = 0; i < 100; i++) {
+          document.write("서울 강의 여행 중..." + "<br/>");
+        }
+      }
+      function goToNewYork() {
+        setTimeout(() => document.write("뉴욕 여행"), 3000);
+      }
+      function goToSeattle() {
+        document.write("시애틀의 잠 못 이루는 밤");
+      }
+      goToSeoul();
+      document.write("<br/>" + "부산으로 놀러오세요." + "<br/>");
+      goToNewYork();
+      document.write(
+        "<br/>" + "시카고의 미시간호는 바다처럼 넓어요." + "<br/>"
+      );
+      goToSeattle();
+    </script> -->
+
+    <!-- Promise -->
+    <!-- <script>
+      const attendOrNot = true; // 참석 여부
+      const place = new Promise((resolve, reject) => {
+        if (attendOrNot) {
+          const placeDetails = {
+            name: "경복궁",
+            location: "서울",
+            time: "12:00",
+          };
+          resolve(placeDetails);
+        } else {
+          reject(Error("다른 약속이 있어 그 시간에 경복궁에 갈 수 없다"));
+        }
+      });
+      //   console.log(place);
+      // 방법 1.
+      place.then(
+        (data) => {
+          console.log(data);
+        },
+        (reason) => {
+          console.log(reason);
+        }
+      );
+      // 방법 2.
+      place
+        .then((data) => console.log(data))
+        .catch((reason) => console.log(reason));
+    </script> -->
+
+    <!-- Promise Chaining -->
+    <!-- <script>
+      const pChaining = new Promise((resolve, reject) => {
+        let score = 100;
+        setTimeout(() => {
+          resolve(score);
+        }, 4000);
+      });
+      pChaining
+        .then((result) => {
+          let penalty = 1;
+          console.log(result);
+          console.log("학생들은 수업에 지각했다.");
+          return result - penalty;
+        })
+        .then((result) => {
+          console.log(result);
+          console.log("학생들이 과제 제출을 늦게 했다.");
+          return result - 5;
+        })
+        .then((result) => console.log(result));
+    </script> -->
+
+    <!-- async await -->
+    <script>
+      function func() {
+        let score = 95;
+        return score;
+      }
+      async function asyncFunc() {
+        let score = 95;
+        let scoreCount = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(score);
+          }, 3000);
+        });
+        let result = await scoreCount;
+        console.log(`%c${result}`, `color: green`);
+        return score;
+      }
+      console.log(func());
+      console.log(asyncFunc());
+      asyncFunc().then((result) => console.log(result));
+      asyncFunc();
+    </script>
+  </body>
+</html>
