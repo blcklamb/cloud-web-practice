@@ -40,14 +40,14 @@ const registerByPromise = (user) => {
 };
 
 const finalResult = registerByPromise(person);
-// finalResult.then(console.log);
+finalResult.then(console.log);
 
 // Promise Practice 2
 const axios = require("axios");
 const URL =
   "http://raw.githubusercontent.com/wapj/jsbackend/main/movieinfo.json";
 
-axios
+const promise = axios
   .get(URL)
   .then((result) => {
     if (result.status != 200) throw new Error("요청 실패");
@@ -74,3 +74,24 @@ axios
     console.log("<< 에러 발생 >>");
     console.log(err);
   });
+
+// Promise to Async-Await Practice
+const getTop20Movies = async () => {
+  try {
+    const {
+      data: { articleList },
+    } = await axios.get(URL);
+    if (!articleList || articleList.size == 0) {
+      throw new Error("데이터 없음");
+    }
+    const result = articleList.map((article, idx) => {
+      return { title: article.title, rank: idx + 1 };
+    });
+    for (let movie of result) {
+      console.log(`${movie.rank}위 ${movie.title}`);
+    }
+  } catch (err) {
+    throw new Error(err);
+  }
+};
+getTop20Movies();
