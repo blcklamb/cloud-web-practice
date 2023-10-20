@@ -1,0 +1,14 @@
+{
+  "name": "express-mongo",
+  "version": "1.0.0",
+  "description": "10월 20일 백엔드 실무 실습입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
